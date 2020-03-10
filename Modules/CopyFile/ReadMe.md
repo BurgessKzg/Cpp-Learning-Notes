@@ -11,7 +11,7 @@
 >   - true : copy success
 >   - false : copy failed
 ## Compile
-g++ CopyFile.cpp -o CopyFile -std=c++11
+g++ CopyFile.cpp -o CopyFile -std=c++11  
 g++ CopyFile.cpp -o CopyFile -std=c++11 -D PRINTF_INFORMATION
 
 ## Example
