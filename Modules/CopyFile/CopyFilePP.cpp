@@ -1,10 +1,38 @@
+/*  BEGIN_FILE_HDR
+************************************************************************************************
+*   NOTICE
+*   Copyright (c) 2020 BurgessKzg All rights reserved.
+************************************************************************************************
+*   Author          : BurgessKzg
+************************************************************************************************
+*   File Name       : 
+************************************************************************************************
+*   Description     :
+************************************************************************************************
+*   Revision History* 
+*     Version       Date       Initials       CR#          Descriptions
+*    ---------   -----------  ------------  ----------  ----------------------------------------
+*     1.0	      
+************************************************************************************************
+*   END_FILE_HDR */
+
 #include <fstream>
 #include <string>
 #include <unistd.h>
 
 using namespace std;
 
-bool CopyFile(const string &strDestFile, const string &strSrcFile)
+/*************************************************
+  Function:       // 函数名称
+  Description:    // 函数功能、性能等的描述
+  Calls:          // 被本函数调用的函数清单
+  Called By:      // 调用本函数的函数清单
+  Input:          // 输入参数说明，包括每个参数的作用、取值说明及参数间关系。
+  Output:         // 对输出参数的说明。
+  Return:         // 函数返回值的说明
+  Others:         // 其它说明
+*************************************************/
+bool CopyFilePP(const string &strDestFile, const string &strSrcFile)
 {
   bool ret = true;
   ifstream calInFile;
@@ -111,12 +139,4 @@ bool CopyFile(const string &strDestFile, const string &strSrcFile)
   } while (0);
 
   return ret;
-}
-
-
-int main(int argc,char* argv[])
-{
-	CopyFile(argv[1],argv[2]);
-
-	return 0;
 }
